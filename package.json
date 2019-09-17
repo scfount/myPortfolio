@@ -1,0 +1,22 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "My professional webpage",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scfount/myPortfolio.git"
+  },
+  "author": "steven fountain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scfount/myPortfolio/issues"
+  },
+  "homepage": "https://github.com/scfount/myPortfolio#readme"
+}
