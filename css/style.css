@@ -790,6 +790,7 @@ a:hover {
 .work-img {
   display: block;
   overflow: hidden;
+  text-align: center;
 }
 
 .work-img img {
@@ -825,6 +826,12 @@ a:hover {
 
 .w-title {
   font-size: 1.2rem;
+}
+
+.fas, .fab, .far {
+  font-size: 10em;
+  padding-top: .2em;
+  
 }
 
 /*======================================
