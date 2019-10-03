@@ -782,10 +782,10 @@ a:hover {
   background-color: #fff;
 }
 
-.work-box:hover img {
+/* .work-box:hover img {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
-}
+} */
 
 .work-img {
   display: block;
@@ -829,7 +829,7 @@ a:hover {
 }
 
 .fas, .fab, .far {
-  font-size: 10em;
+  font-size: 7em;
   padding-top: .2em;
   
 }
