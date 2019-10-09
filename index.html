@@ -95,10 +95,10 @@
         <div class="col-sm-12">
           <div class="box-shadow-full">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-4">
                 <div class="row">
-                  <div class="col-md-7 col-sm-12">
-                    <div class="mb-3">
+                  <div class="col-md-11 col-sm-12">
+                    <div class="mb-4">
                       <img src="img/SF.jpg" class="img-fluid rounded b-shadow-a" alt="" />
                     </div>
                   </div>
@@ -111,10 +111,30 @@
                     </div>
                   </div> -->
                 </div>
-                <div class="skill-mf">
-                  <p class="title-s">Skills</p>
-                  <span>HTML</span>
-                  <span class="pull-right">85%</span>
+                <div class="row">
+                  <div class="col-md-6">
+                      <h4 class="s-title">Languages:</h4>
+                      <ul class="list-unstyled">
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Sass</li>
+                      </ul>
+                  </div>
+                  <div class="col-md-6">
+                      <h4 class="s-title">Dev Tools:</h4>
+                      <ul class="list-unstyled">
+                        <li>VSCode</li>
+                        <li>Vue.js</li>
+                        <li>Nuxt</li>
+                        <li>Bootstrap</li>
+                        <li>Adobe XD</li>
+                        <li>Github</li>
+                        <li>CLI</li>
+                      </ul>
+                  </div>
+                  <!-- <p class="title-s">Skills</p>
+                  <span>HTML</span> <span class="pull-right">85%</span>
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
                       aria-valuemin="0" aria-valuemax="100"></div>
@@ -133,12 +153,10 @@
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
                       aria-valuemax="100"></div>
-                  </div>
-                  <span class="ion-document-text"></span><a class="title-s text-primary ml-2"
-                    href="assets/steven-fountain-resume.pdf" target="_blank">Resume</a>
+                  </div> -->
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-8">
                 <div class="about-me pt-4 pt-md-0">
                   <div class="title-box-2">
                     <h5 class="title-left">
@@ -162,6 +180,8 @@
                     to apply what I have learned. Below you’ll find some
                     examples of the work I've done and skills I've gained.
                   </p>
+                  <span class="ion-document-text"></span> <a class="title-s text-primary ml-2"
+                    href="assets/steven-fountain-resume.pdf" target="_blank">Resume</a>
                 </div>
               </div>
             </div>
@@ -313,7 +333,7 @@
           <div class="work-box">
             <a href="#projectTwo" data-toggle="modal">
               <div class="work-img">
-                <i class="fas fa-broadcast-tower"></i>
+                <i class="fas fa-satellite-dish"></i>
                 <!-- <img src="img/work-2.jpg" alt="" class="img-fluid" /> -->
               </div>
               <div class="work-content">
@@ -389,11 +409,14 @@
                 <!-- Project content-->
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h4 class="modal-title">NASA Feature Website</h4>
+                    <h4 class="modal-title">NASA Feature Website -  <a class="text-primary" href="https://nasa-feature-website.netlify.com/" target="_blank">View here</a></h4>
                   </div>
                   <div class="modal-body px-5">
-                    <p>Some text in the modal.</p>
-                    <a href="https://nasa-feature-website.netlify.com/" target="_blank">View here</a>
+                    <p>This was my first project incorporating APIs and using Vue.js as a front-end framework and bootstrap for style. I decided to work with APIs from NASA as there was plenty of great documentation to get up and running and very interesting content. The First API is used was the NASA Astrological image of the day, which updates daily with a new astrological image or video, title, and description which I incorporated into my home page. One challenge I faced was ensuring that my vue component would generate the correct media tag as I would not always get an img from the API, it could also be a video. Using a v-if-else statement I was able to conditionally render the appropriate media tag.</p>
+                    <p>The second API I used pulls all the tech projects NASA is working on. I initially pull the projects updated within the last month and used a vue component to generate a tile with the project ID and last update date. From there, the user can type the project ID they would like to learn about into the search box, re-running the API query with project ID parameters. The project is displayed on the page with a title, description, benefits, start and expected end date, and whether it is still an active project or not. Some challenges I faced were only displaying projects that were updated within the last month as the original query returned thousands of projects. This allowed me to only display current projects and keep the page load time down. I had to modify a date object so that I could match the format to that within the API query:</p>
+                    <img class="mb-3" src="img/time-vuejs.PNG" alt="code snippet">
+                    <p>Another challenge I faced was taking a value provided by the user and properly adding it to the API query. This was achieved by assigning the user provided value to a variable, and writing a method that broke down the API query into variables and rebuilding it with the user provided variable:</p>
+                    <img src="img/projects-vue.PNG" alt="code snippet">
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="close" data-dismiss="modal">
@@ -444,7 +467,7 @@
                   <div class="modal-body px-5">
                       <p>For this project I was given several page mockups and went through the process of converting them into a fully responsive and functional website. Initially I broke down the pages into semantic HTML sections, coding all the markup first. Once all of the pages were done, I added my style using current standards such as grid and flexbox for ease of layout and responsiveness.</p>
                       <p>There were several added features for this project, the first was adding an alert that prompted the user with information about the dog. For that I wrote a JavaScript function with three parameters – name, breed and fee. The were passed as arguments when the user clicked on the dog tile.</p>
-                      <img class="mb-3" src="img/dog-js.png" alt="code snippit"> <p>The second feature was to create a functioning cart total, so when a user added a dog to their cart it would update with the current total. This was achieved using JavaScript and jQuery. When the add to cart button is clicked, this calls the function addToCart, which accepts the fee as an argument, and updated the cartTotal variable. This variable is trimmed to two decimal places and placed next to the shopping cart icon using jQuery.</p>
+                      <img class="mb-3" src="img/dog-js.png" alt="code snippit"> <p>The second feature was a functioning cart total, so when a user added a dog to their cart it would update with the current total. This was achieved using JavaScript and jQuery. When the add to cart button is clicked, this calls the function addToCart, which accepts the fee as an argument, and updated the cartTotal variable. This variable is trimmed to two decimal places and placed next to the shopping cart icon using jQuery.</p>
                       <img class="mb-3" src="img/cart-js.PNG" alt="code snippit"> <p>The third feature was generating all the blog posts dynamically utilizing a for loop to iterate through an array of blog posts, selecting and manipulating DOM elements with JavaScript.</p>
                       <img src="img/blog-js.PNG" alt="code snippit">
                   </div>
@@ -547,7 +570,7 @@
               <div class="modal-header">
                 <h4 class="modal-title">Mock-up Evaluation - <a class="text-primary pr-3" href="https://scfount.github.io/mock-up-eval/" target="_blank">View here</a></h4>
               </div>
-              <div class="modal-body px-5 lead">
+              <div class="modal-body px-5">
                 <p>
                   I was tasked to build a single webpage based upon a
                   design <a class="text-primary" href="assets/mockup.pdf" target="_blank">mockup</a>. I received the mockup in the form of a
