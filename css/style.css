@@ -831,7 +831,10 @@ a:hover {
 .fas, .fab, .far {
   font-size: 7em;
   padding-top: .2em;
-  
+}
+
+.fa-universal-access {
+  font-size: 1em;
 }
 
 /*======================================
