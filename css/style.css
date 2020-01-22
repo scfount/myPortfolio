@@ -254,9 +254,8 @@ a:hover {
 
 .list-ico span {
   color: #0078ff;
-  margin-right: 10px;
+  margin-right: .5em;
 }
-
 /*------/ Ico Circle /------*/
 
 .ico-circle {
@@ -1080,6 +1079,10 @@ a:hover {
 
 .contact-mf {
   margin-top: 4rem;
+}
+
+.contact-text:hover {
+  font-weight: bold;
 }
 
 /*======================================
