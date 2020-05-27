@@ -57,11 +57,11 @@
             <a class="nav-link js-scroll" href="#service">Services</a>
           </li> -->
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#work">Portfolio</a>
+            <a class="nav-link js-scroll" href="#work">Projects</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link js-scroll" href="#blog">Blog</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#contact">Contact</a>
           </li>
@@ -196,14 +196,14 @@
     <div class="overlay-mf"></div>
     <div class="container">
       <div class="row">
-        <!--/ Section Portfolio Start /-->
-      <section id="work" class="portfolio-mf route">
+      <!--/ Section Projects Start /-->
+      <section id="work" class="route">
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
               <div class="title-box text-center">
                 <h3 class="fa-inverse title-a">
-                  Portfolio
+                  Projects
                 </h3>
                 <p class="fa-inverse"></p>
                 <div class="line-mf-light"></div>
@@ -211,37 +211,101 @@
             </div>
           </div>
           <div class="row">
-
-            <!-- start project five  -->
-            <div class="col-md-6 col-lg-4">
+          
+            <!-- first project card  -->
+            <div class="col-md-6">
               <div class="work-box">
-                <a href="#projectFive" data-toggle="modal">
+                <a href="#projectHomeApp" data-toggle="modal">
+                  <div class="work-img">
+                    <i class="fas fa-home"></i>
+                  </div>
+                  <div class="work-content">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <h2 class="w-title">Full Stack Home App</h2>
+                        <div class="w-more">
+                          <a class="w-ctegory" href="https://github.com/scfount/home-maintenance-app" target="_blank">GitHub</a>
+                          <p class="mt-2 w-date">VUE / REST API / Java Spring Boot / MySQL</p>
+                          <p class="mt-3">
+                            Designed and developed a full stack web application to keep track of home appliance maintenance, service dates, instructions, and relevant links. </p>
+
+                            <p>This application was buit on the following stack: MySQL, Java, Vue.js using Axios to handle HTTP requsts and Spring Boot to create a RESTful web service, running SQL queries and returning data to the browser. </p>
+
+                            <p>User has the ability to create appliances and update/view exsisting appliance details.
+                          </p>
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <!-- project Home App details modal -->
+                <div id="projectHomeApp" class="modal fade" role="dialog">
+                  <div class="modal-dialog modal-lg">
+                    <!-- Project content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Home Maintenance App</h4>
+                      </div>
+                      <div class="modal-body px-5">
+                        <p>
+
+                        </p>
+                        <div class="text-center">
+                          
+                        </div>
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="close" data-dismiss="modal">
+                          &times;
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end modal  -->
+              </div>
+            </div>
+            <!-- end project Home App  -->
+
+            <!-- start project Binit  -->
+            <div class="col-md-6">
+              <div class="work-box">
+                <a href="#projectBinit" data-toggle="modal">
                   <div class="work-img">
                     <i class="fas fa-map-marker-alt"></i>
-                    <!-- <img src="img/work-5.jpg" alt="" class="img-fluid" /> -->
                   </div>
                   <div class="work-content">
                     <div class="row">
                       <div class="col-sm-12">
                         <h2 class="w-title">Binit Website</h2>
                         <div class="w-more">
-                          <span class="w-ctegory">Ongoing</span> -
-                          <span class="w-date">React / HTML / CSS / JavaScript</span>
+                          <a class="w-ctegory" href="https://gitlab.com/binitapp/binit-web" target="_blank">GitLab</a> 
+                          ---
+                          <a class="w-ctegory" href="https://binit-b6f42.firebaseapp.com/userProfile" target="_blank">View Site Here</a>
+                          <p class="mt-2 w-date">React / JavaScript / HTML / CSS</p>
                           <p class="mt-3">
-                            Working on a small international development team turning Adobe Designs into pixel perfect web pages with React, focusing on responsive design and accessibility.
+                            Using the volunteer platform social coder, I joined a small international development team as a front-end developer, turning Adobe Designs into pixel perfect web pages within React, focusing on responsive design and accessibility.
+                          </p>
+                          <p>
+                            Working remotely has its challenges, however we were able to stay on top of tasks by utilizing trello and slack, meeting weekly to discuss the project.
+                          </p>
+                          <p>
+                            Very fornutate to be able to conrtibute to a good cause as well as gain valuable experience.
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </a>
-                <!-- project five details modal -->
-                <div id="projectFive" class="modal fade" role="dialog">
+                <!-- project Binit details modal -->
+                <div id="projectBinit" class="modal fade" role="dialog">
                   <div class="modal-dialog modal-lg">
                     <!-- Project content-->
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h4 class="modal-title">Binit Website - <a class="text-primary" href="https://binit.eu/" target="_blank">View here</a></h4>
+                        <h4 class="modal-title">Binit Website</h4>
                       </div>
                       <div class="modal-body px-5">
                         <p></p>
@@ -257,198 +321,41 @@
                 <!-- end modal  -->
               </div>
             </div>
-            <!-- end project five  -->
+            <!-- end project Binit  -->
 
-            <!-- project six card start  -->
-            <div class="col-md-6 col-lg-4">
+                      
+
+            <!-- start project NASA card  -->
+            <div class="col-md-6">
               <div class="work-box">
-                <a href="#projectSix" data-toggle="modal">
-                  <div class="work-img">
-                    <i class="fas fa-stopwatch"></i>
-                    <!-- <i class="far fa-clock"></i> -->
-                    <!-- <i class="fas fa-clock"></i> -->
-                    <!-- <img src="img/mockup2.gif" alt="mockup icon" class="img-fluid"/> -->
-                  </div>
-                  <div class="work-content">
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <h2 class="w-title">Countdown Timer Web App</h2>
-                        <div class="w-more">
-                          <span class="w-ctegory">Ongoing</span> -
-                          <span class="w-date">JavaScript / Bootstrap / IIS Web Server</span>
-                          <p class="mt-3">
-                            Created a custom tailored coutndown timer web app using pure JavaScript, hosted internally on an IIS Web Server.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- project six details modal -->
-            <div id="projectSix" class="modal fade" role="dialog">
-              <div class="modal-dialog modal-lg">
-                <!-- Project content-->
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title">Countdown Timer Web App - <a class="text-primary pr-3" href="https://timer-web-app.netlify.com/?_ga=2.180941666.415090436.1578005679-1709285254.1578005679" target="_blank">View here</a></h4>
-                  </div>
-                  <div class="modal-body px-5">
-                    <p>
-                    This web app was built on request from a colleague who needed a customizable timer to keep track of spcefic times and location of people as they rotate spaces. This was built using JavaScript and designed with Bootstrap, hosted on a server I built running IIS for internal use.
-                    </p>
-                    <p>
-
-                    </p>
-                    
-                    
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="close" data-dismiss="modal">
-                      &times;
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end project six  -->
-
-            <!-- first project card  -->
-            <div class="col-md-6 col-lg-4">
-              <div class="work-box">
-                <a href="#projectOne" data-toggle="modal">
-                  <div class="work-img">
-                    <i class="fab fa-wix"></i>
-                    <!-- <img id="birch-logo" src="img/birch-bakery.svg" alt="company logo" class="img-fluid" width="134px" onmouseover="this.src='img/birch-bakery-blue.svg'" onmouseout="this.src='img/birch-bakery.svg'"/> -->
-                  </div>
-                  <div class="work-content">
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <h2 class="w-title">Birch Bakery</h2>
-                        <div class="w-more">
-                          <span class="w-ctegory">Ongoing</span> -
-                          <span class="w-date">Site Builder / Design / Client Relationships</span>
-                          <p class="mt-3">
-                            Building an ecomerce website for a friend using Wix, ultimately ending with them having the ability
-                            and confidence to manage on their own.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <!-- project one details modal -->
-                <div id="projectOne" class="modal fade" role="dialog">
-                  <div class="modal-dialog modal-lg">
-                    <!-- Project content-->
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h4 class="modal-title">Birch Bakery - <a class="text-primary" href="https://www.birchbakery.com" target="_blank">View here</a></h4>
-                      </div>
-                      <div class="modal-body px-5">
-                        <p>A friend of mine was starting a business and needed some help creating a website. We met and I came prepared with some very user friendly website builders as I wanted to give them the ability to manage their site by themselves in the future as this was going to be an ecommerce site with changing products and info. I settled upon Wix as they provided a very comprehensive solution, offering powerful ecommerce tools within a friendly dashboard, hosting and intuitive page building features.</p>
-                        <p>This project allowed me to take more of a design focused mindset while utilizing my development skillset. One example of this would be the inclusion of a database that allowed me to create an image filter function for the gallery, a configuration that was a bit too advanced for someone just starting out. Overall this experience was very valuable as I went through several key phases of the website creation process. From gathering all the goals and functions of the site to implementation and revisions, resulting in a website that is usable to maintain and use.</p>
-                        <div class="text-center">
-                          <a href="https://www.birchbakery.com" target="_blank"> <img src="img/birch-bakery.svg" alt="company logo" width="25%"></a>
-                        </div>
-                        
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="close" data-dismiss="modal">
-                          &times;
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- end modal  -->
-              </div>
-            </div>
-            <!-- end project one  -->
-
-            <!-- start project two card  -->
-            <div class="col-md-6 col-lg-4">
-              <div class="work-box">
-                <a href="#projectTwo" data-toggle="modal">
-                  <div class="work-img">
-                    <i class="fas fa-satellite-dish"></i>
-                    <!-- <img src="img/work-2.jpg" alt="" class="img-fluid" /> -->
-                  </div>
-                  <div class="work-content">
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <h2 class="w-title">Live Streaming Page</h2>
-                        <div class="w-more">
-                          <span class="w-ctegory">Oct 2019</span> -
-                          <span class="w-date">HTML / CSS / JS / SharePoint
-                            <p class="mt-3">
-                                Upgraded our existing team website to a SharePoint site, integrating a live streaming page giving stakeholders the ability to remotely view currently running UX studies.
-                            </p>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <!-- project two details modal -->
-                <div id="projectTwo" class="modal fade" role="dialog">
-                  <div class="modal-dialog modal-lg">
-                    <!-- Project content-->
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h4 class="modal-title">Live Streaming Page</h4>
-                      </div>
-                      <div class="modal-body px-5">
-                        <p>Our team needed to migrate our existing website over to a SharePoint Site, keeping all the same functionality. One challenge with this move was ensuring that we were still able to provide stakeholders the ability to remotely view a research study running in our labs on this new site. </p>
-                        <p>For this I needed a single page organized by building and lab, with a button that would open a video player displaying a live stream of the research lab. I integrated links with our existing <a class="text-primary" href="https://www.wowza.com/products/streaming-engine">Wowza Streaming Server </a>that would correspond to the correct lab when each button was pressed to do just that.</p>
-                        <p>In the end we were able to successfully move all the content from our old site to the new SharePoint, as well as continue to provide a reliable, robust streaming experience for our customers</p>                 
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="close" data-dismiss="modal">
-                          &times;
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- end modal  -->
-              </div>
-            </div>
-            <!-- end project two  -->
-
-            <!-- start project three card  -->
-            <div class="col-md-6 col-lg-4">
-              <div class="work-box">
-                <a href="#projectThree" data-toggle="modal">
+                <a href="#projectNASA" data-toggle="modal">
                   <div class="work-img">
                     <i class="fas fa-space-shuttle"></i>
-                    <!-- <img src="img/work-3.jpg" alt="" class="img-fluid" /> -->
                   </div>
                   <div class="work-content">
                     <div class="row">
                       <div class="col-sm-12">
-                        <h2 class="w-title">NASA Feature Website</h2>
+                        <h2 class="w-title">Capstone Project</h2>
                         <div class="w-more">
-                          <span class="w-ctegory">Sep 2019</span> -
-                          <span class="w-date">HTML / CSS / JS / API / Vue</span>
+                          <a href="https://github.com/scfount/NASA-Feature-Website" class="w-ctegory" target="blank">GitHub</a> 
+                          --- 
+                          <a class="w-ctegory" href="https://nasa-feature-website.netlify.com/" target="_blank">View Site Here</a>
+                          <p class="mt-2 w-date">NUXT / REST API / JavaScript / HTML / CSS</p>
                           <p class="mt-3">
-                            Designed and developed a responsive multi-page site
-                            utilizing Axios with NASAs REST API's, integrating a
-                            search feature, within the front-end framework Vue.
+                            For my front-end web certificate program I designed and developed a responsive multi-page website within NUXT and incorporated Axios to retrieve NASAs REST APIs.
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </a>
-                <!-- project three details modal -->
-                <div id="projectThree" class="modal fade" role="dialog">
+                <!-- project NASA details modal -->
+                <div id="projectNASA" class="modal fade" role="dialog">
                   <div class="modal-dialog modal-lg">
                     <!-- Project content-->
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h4 class="modal-title">NASA Feature Website - <a class="text-primary" href="https://nasa-feature-website.netlify.com/" target="_blank">View here</a></h4>
+                        <h4 class="modal-title">Capstone Project - <a class="text-primary" href="https://nasa-feature-website.netlify.com/" target="_blank">View here</a></h4>
                       </div>
                       <div class="modal-body px-5">
                         <p>This was my first project incorporating APIs and using Vue.js as a front-end framework and bootstrap for style. I decided to work with APIs from NASA as there was plenty of great documentation to get up and running and very interesting content. The First API is used was the NASA Astrological image of the day, which updates daily with a new astrological image or video, title, and description which I incorporated into my home page. One challenge I faced was ensuring that my vue component would generate the correct media tag as I would not always get an img from the API, it could also be a video. Using a v-if-else statement I was able to conditionally render the appropriate media tag.</p>
@@ -468,137 +375,74 @@
                 <!-- end modal  -->
               </div>
             </div>
-            <!-- end project three  -->
+            <!-- end project NASA  -->
 
-            <!-- start project four card  -->
-            <div class="col-md-6 col-lg-4">
+            <!-- project Timer card start  -->
+            <div class="col-md-6">
               <div class="work-box">
-                <a href="#projectFour" data-toggle="modal">
+                <a href="#projectTimer" data-toggle="modal">
                   <div class="work-img">
-                    <i class="fas fa-dog"></i>
-                    <!-- <img src="img/work-4.jpg" alt="" class="img-fluid" /> -->
+                    <i class="fas fa-stopwatch"></i>
                   </div>
                   <div class="work-content">
                     <div class="row">
                       <div class="col-sm-12">
-                        <h2 class="w-title">Dog Adoption Website</h2>
+                        <h2 class="w-title">Countdown Timer Web App</h2>
                         <div class="w-more">
-                          <span class="w-ctegory">June 2019</span> -
-                          <span class="w-date">HTML / CSS / JS / jQuery</span>
+                          <a class="w-ctegory" href="https://github.com/scfount/timer-app" target="_blank">GitHub</a> --- 
+                          <a class="w-ctegory" href="https://timer-web-app.netlify.com/?_ga=2.180941666.415090436.1578005679-1709285254.1578005679" target="_blank">View App Here</a>
+                          <p class="mt-2 w-date">JavaScript / Bootstrap / IIS Web Server</p>
                           <p class="mt-3">
-                            Developed a responsive multi-page website based on
-                            provided specifications utilizing JS and jQuery to
-                            create an 'add to cart' feature.
+                            This web app was built on request from a colleague who needed a customizable timer to keep track of spcefic times and locations of people as they rotate spaces. This was built using pure JavaScript and jQuery, designed with Bootstrap, hosted on a windows server I built running IIS.
+                          </p>
+                          <p>
+                            Users can enter the names of all participants and relevant session information, once the timer is started the user will see which person should be in each space, and the app will rotate each person appropriatly and align them with the correct time.
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </a>
-                <!-- project four details modal -->
-                <div id="projectFour" class="modal fade" role="dialog">
-                  <div class="modal-dialog modal-lg">
-                    <!-- Project content-->
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h4 class="modal-title">Dog Adoption Website - <a class="text-primary" href="https://scfount.github.io/adopt-a-dog-spring2019/index.html" target="_blank">View here</a></h4> 
-                      </div>
-                      <div class="modal-body px-5">
-                          <p>For this project I was given several page mockups and went through the process of converting them into a fully responsive and functional website. Initially I broke down the pages into semantic HTML sections, coding all the markup first. Once all of the pages were done, I added my style using current standards such as grid and flexbox for ease of layout and responsiveness.</p>
-                          <p>There were several added features for this project, the first was adding an alert that prompted the user with information about the dog. For that I wrote a JavaScript function with three parameters – name, breed and fee. The were passed as arguments when the user clicked on the dog tile.</p>
-                          <img class="mb-3" src="img/dog-js.png" alt="code snippit"> <p>The second feature was a functioning cart total, so when a user added a dog to their cart it would update with the current total. This was achieved using JavaScript and jQuery. When the add to cart button is clicked, this calls the function addToCart, which accepts the fee as an argument, and updated the cartTotal variable. This variable is trimmed to two decimal places and placed next to the shopping cart icon using jQuery.</p>
-                          <img class="mb-3" src="img/cart-js.PNG" alt="code snippit"> <p>The third feature was generating all the blog posts dynamically utilizing a for loop to iterate through an array of blog posts, selecting and manipulating DOM elements with JavaScript.</p>
-                          <img src="img/blog-js.PNG" alt="code snippit">
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="close" data-dismiss="modal">
-                          &times;
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- end modal  -->
               </div>
             </div>
-            <!-- end project four  -->        
+            <!-- project Timer details modal -->
+            <div id="projectTimer" class="modal fade" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <!-- Project content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Countdown Timer Web App</h4>
+                  </div>
+                  <div class="modal-body px-5">
+                    <p>
+                    
+                    </p>                
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end project Timer  -->
           </div>
         </div>
       </section>
-      <!--/ Section Portfolio End /-->
+      <!--/ Section Projects End /-->
       </div>
     </div>
   </div>
 
 
- <!--/ Section Blog Start /-->
- <section id="blog" class="blog-mf sect-pt4 route">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="title-box text-center">
-          <h3 class="title-a">
-            Blog
-          </h3>
-          <p class="fa-inverse"></p>
-          <div class="line-mf-dark"></div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <!-- service one -->
-      <div class="col">
-        <div class="service-box">
-          <div class="service-ico">
-            <span class="ico-circle"><i class="ion-ios-home"></i></span>
-          </div>
-          <div class="service-content">
-            <h2 class="s-title">Home Maintenance Tracking</h2>
-            <p class="s-description text-center">
-              Building a Java application to track home maintenance schedule and appliance information for our new home - post coming soon! 
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- service two -->
-      <!-- <div class="col-md-4">
-        <div class="service-box">
-          <div class="service-ico">
-            <span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
-          </div>
-          <div class="service-content">
-            <h2 class="s-title">Responsive Design</h2>
-            <p class="s-description text-center">
-              Mobile first design to ensure a professional look on any
-              device
-            </p>
-          </div>
-        </div>
-      </div> -->
-      <!-- service three -->
-      <!-- <div class="col-md-4">
-        <div class="service-box">
-          <div class="service-ico">
-            <span class="ico-circle"><i class="fas fa-universal-access"></i></span>
-          </div>
-          <div class="service-content">
-            <h2 class="s-title">Accessibility</h2>
-            <p class="s-description text-center">
-              Ensuring web applications are accessible by all through modern inclusive design
-            </p>
-          </div>
-        </div>
-      </div> -->
-    </div>
-  </div>
-</section>
-<!--/ Section Services End /-->
+
   
 
   <!--/ Section Contact-Footer Start /-->
-  <section class="paralax-mf footer-paralax bg-image sect-mt4 route"
-    style="background-image: url(img/pike-place-bg.jpg)">
-    <div class="overlay-mf"></div>
+  <section class="paralax-mf footer-paralax bg-image sect-mt route"
+    >
+    <!-- <div class="overlay-mf"></div> -->
     <div class="container">
       <div class="row">
         <div class="col-sm-12">

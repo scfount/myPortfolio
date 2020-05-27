@@ -90,7 +90,7 @@ a:hover {
 }
 
 .overlay-mf {
-  background-color: #0078ff;
+  background-color: #4e4e4e;
 }
 
 .overlay-mf {
@@ -189,11 +189,11 @@ a:hover {
   position: relative;
 }
 
-.title-left:before {
+.title-left:before{
   content: '';
   position: absolute;
   height: 3px;
-  background-color: #0078ff;
+  background-color: #1e1e1e;
   width: 100px;
   bottom: -12px;
 }
@@ -339,7 +339,7 @@ a:hover {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #0078ff;
+  background: #1e1e1e;
   color: #fff;
   width: 44px;
   height: 44px;
@@ -494,22 +494,22 @@ a:hover {
 }
 
 .navbar-b.navbar-reduce .nav-link {
-  color: #0078ff;
+  color: #1e1e1e;
 }
 
 .navbar-b.navbar-reduce .nav-link:before {
-  background-color: #0078ff;
+  background-color: #1e1e1e;
 }
 
 .navbar-b.navbar-reduce .nav-link:hover {
-  color: #0078ff;
+  color: #1e1e1e;
 }
 
 .navbar-b.navbar-reduce .show > .nav-link,
 .navbar-b.navbar-reduce .active > .nav-link,
 .navbar-b.navbar-reduce .nav-link.show,
 .navbar-b.navbar-reduce .nav-link.active {
-  color: #0078ff;
+  color: #1e1e1e;
 }
 
 .navbar-b.navbar-reduce .navbar-brand {
