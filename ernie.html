@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>DevFolio Bootstrap Template</title>
+  <title>Ernie!</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -19,29 +19,43 @@
 
 </head>
 <body>
-
   <div class="container">
-    <h1 class="pt-5 text-center">Ernie The Bernie</h1>
-    <div class="text-right">
-      <p id="">Ernie was born on Friday May 1st, 2020</p>
-      <p id="age"></p> 
+    <div class="row">
+      <div class="col-md-6">
+        <img src="../assets/banner1.jpeg" alt="Ernie!" style="width:100%">
+      </div>
+      <div class="col-md-6">
+        <h1 class="py-3 text-center">Ernie The Bernie</h1>
+        <div class="lead">
+          <p id="">Date of birth: Tuesday May 5th, 2020</p>
+          <p id="weeks"></p> 
+          <p id="months"></p>
+      </div>
     </div>
+  </div>
+    
 </body>
 
 
   <script>
-    document.getElementById("age").innerHTML = `Ernie is ${getAge()} weeks old`;
     
+    let ageInDays = getAge() / (1000*60*60*24);
+    let ageInWeeks = ageInDays/7;
+    let ageInMonths = ageInWeeks/4;
+
     function getAge() {
       let now = new Date();
-      let dateOfBirth = new Date("2020/05/01");
+      let dateOfBirth = new Date("2020/05/05");
       let age = now - dateOfBirth;
   
-      let days = (age / (1000*60*60*24));
-      let weeks = days/7;
+      // let days = (age / (1000*60*60*24));
+      // let weeks = days/7;
 
-      return weeks.toFixed(2);
+      return age;
     }
+
+    document.getElementById("weeks").innerHTML = `${ageInWeeks.toFixed(1)} weeks old`;
+    document.getElementById("months").innerHTML = `${ageInMonths.toFixed(1)} months old`;
 
   </script>
   <!-- JavaScript Libraries -->
@@ -53,7 +67,6 @@
   <script src="lib/counterup/jquery.waypoints.min.js"></script>
   <script src="lib/counterup/jquery.counterup.js"></script>
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/lightbox/js/lightbox.min.js"></script>
   <script src="lib/typed/typed.min.js"></script>
 
   <!-- Template Main Javascript File -->
