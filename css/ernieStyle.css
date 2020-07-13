@@ -1,0 +1,14 @@
+
+body {
+	background-image: url(../assets/banner1.jpeg); /* Default image. */
+	background-repeat: no-repeat;
+	background-position: center top;
+    background-size: cover;
+	transition: background-image 1s linear;
+}
+
+/* Use additional CSS to control the `height` of `[data-slides]`, like so: */
+
+.test { 
+    height: 100vh;
+}

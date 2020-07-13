@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>DevFolio Bootstrap Template</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/ernieStyle.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="pt-5 text-center">Ernie The Bernie</h1>
+    <div class="text-right">
+      <p id="">Ernie was born on Friday May 1st, 2020</p>
+      <p id="age"></p> 
+    </div>
+</body>
+
+
+  <script>
+    document.getElementById("age").innerHTML = `Ernie is ${getAge()} weeks old`;
+    
+    function getAge() {
+      let now = new Date();
+      let dateOfBirth = new Date("2020/05/01");
+      let age = now - dateOfBirth;
+  
+      let days = (age / (1000*60*60*24));
+      let weeks = days/7;
+
+      return weeks.toFixed(2);
+    }
+
+  </script>
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+
+</body>
+</html>
