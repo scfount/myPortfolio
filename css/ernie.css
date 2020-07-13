@@ -1,3 +1,2 @@
-.carousel-inner > .item > img, .carousel-inner > .item > a > img{
-    margin:auto;
-}
+.carousel { overflow: hidden; }
+.carousel-item { overflow: hidden; }
