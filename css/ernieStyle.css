@@ -1,4 +1,4 @@
-.carousel-inner>.item{
+.carousel-inner>.carousel-item{
     /*disables white flash*/
     -webkit-transition: -webkit-transform .5s ease-in-out;
     -o-transition: -o-transform .5s ease-in-out;
