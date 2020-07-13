@@ -1,6 +1,4 @@
-.carousel-inner>.carousel-item{
-    /*disables white flash*/
-    -webkit-transition: -webkit-transform .5s ease-in-out;
-    -o-transition: -o-transform .5s ease-in-out;
-    transition: transform .5s ease-in-out;
- }
+.carousel-inner > .carousel-item {
+    -webkit-backface-visibility: visible;
+            backface-visibility: visible;
+}
