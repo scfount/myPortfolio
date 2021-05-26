@@ -1115,7 +1115,7 @@ footer .credits a {
 }
 
 /*======================================
-//--//-->   CONtaCT FORM
+//--//-->   CONTACT FORM
 ======================================*/
 
 #sendmessage {
@@ -1295,4 +1295,17 @@ footer .credits a {
   .back-to-top {
     bottom: 15px;
   }
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
 }
